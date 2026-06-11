@@ -73,7 +73,7 @@ header.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(18,18,
 @keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
 
 /* HERO */
-.hero{position:relative;height:85vh;min-height:500px;overflow:hidden;margin-top:-72px}
+.hero{position:relative;height:90vh;min-height:500px;overflow:hidden;margin-top:-72px}
 .hero img.bg,.hero video.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero iframe.bg{position:absolute;inset:0;width:100%;height:100%;border:none;z-index:0;background:#000}
 .hero iframe.bg[src]{display:block}

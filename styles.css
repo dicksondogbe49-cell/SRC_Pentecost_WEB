@@ -87,7 +87,7 @@ header.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(18,18,
 .hero-actions{margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:1rem}
 
 /* MARQUEE */
-.marquee{position:absolute;bottom:5px;left:0;right:0;top:20px;background:var(--primary);color:#ffffff;padding:.85rem 0;overflow:hidden;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);z-index:3}
+.marquee{position:absolute;bottom:5px;left:0;right:0;top:30px;background:var(--primary);color:#ffffff;padding:.85rem 0;overflow:hidden;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);z-index:3}
 .marquee-track{display:flex;gap:3rem;white-space:nowrap;animation:marquee 30s linear infinite;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.15em}
 .marquee-track span.star{color:var(--secondary)}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}

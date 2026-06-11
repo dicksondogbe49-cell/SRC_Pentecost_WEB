@@ -73,7 +73,7 @@ header.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(18,18,
 @keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
 
 /* HERO */
-.hero{position:relative;height:90vh;min-height:500px;overflow:hidden;margin-top:-72px}
+.hero{position:relative;height:100vh;min-height:500px;overflow:hidden;margin-top:-72px}
 .hero img.bg,.hero video.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero iframe.bg{position:absolute;inset:0;width:100%;height:100%;border:none;z-index:0;background:#000}
 .hero iframe.bg[src]{display:block}
@@ -87,7 +87,7 @@ header.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(18,18,
 .hero-actions{margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:1rem}
 
 /* MARQUEE */
-.marquee{position:absolute;bottom:5px;left:0;right:0;top:35px;background:var(--primary);color:#ffffff;padding:.85rem 0;overflow:hidden;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);z-index:3}
+.marquee{position:absolute;bottom:0;left:0;right:0;top:24px;background:var(--primary);color:#ffffff;padding:.85rem 0;overflow:hidden;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);z-index:3}
 .marquee-track{display:flex;gap:3rem;white-space:nowrap;animation:marquee 30s linear infinite;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.15em}
 .marquee-track span.star{color:var(--secondary)}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -219,7 +219,7 @@ footer{background:var(--card);border-top:1px solid var(--border);margin-top:4rem
   .container{padding:0 1.75rem;margin:0 auto}
   
   /* Hero */
-  .hero{height:75vh;min-height:480px}
+  .hero{height:85vh;min-height:480px}
   .hero-content{padding:4.5rem 0 3rem}
   .hero h1{font-size:clamp(2rem,5vw,3rem);line-height:0.9}
   .hero p.lead{font-size:1rem;line-height:1.6}
@@ -267,9 +267,10 @@ footer{background:var(--card);border-top:1px solid var(--border);margin-top:4rem
 @media(max-width:768px){
   body{padding:0 1rem}
   .container{padding:0 1.25rem;margin:0 auto}
+
   
   /* Hero */
-  .hero{height:70vh;min-height:450px;margin-top:-72px}
+  .hero{height:85vh;min-height:450px;margin-top:-72px}
   .hero-content{padding:4rem 0 2.5rem}
   .hero h1{font-size:clamp(1.8rem,5vw,2.8rem);line-height:0.95}
   .hero p.lead{font-size:0.95rem;line-height:1.6}
@@ -277,6 +278,7 @@ footer{background:var(--card);border-top:1px solid var(--border);margin-top:4rem
   .hero-actions{flex-direction:column;gap:1rem}
   .hero-actions .btn{width:100%;text-align:center}
   .marquee-track{font-size:1.1rem;gap:2rem}
+  
   
   /* Nav */
   .nav-inner{height:64px}
@@ -393,7 +395,7 @@ footer{background:var(--card);border-top:1px solid var(--border);margin-top:4rem
   .container{padding:0 1rem;margin:0 auto}
   
   /* Hero */
-  .hero{height:65vh;min-height:400px;margin-top:-64px}
+  .hero{height:85vh;min-height:400px;margin-top:-64px}
   .hero-content{padding:3.5rem 0 2.5rem}
   .hero h1{font-size:clamp(1.6rem,5vw,2.6rem);line-height:0.95}
   .hero p.lead{font-size:0.9rem;line-height:1.5}
@@ -526,7 +528,7 @@ footer{background:var(--card);border-top:1px solid var(--border);margin-top:4rem
   .container{padding:0 0.8rem}
   
   /* Hero */
-  .hero{height:60vh;min-height:340px}
+  .hero{height:85vh;min-height:340px}
   .hero-content{padding:2.5rem 0 1.5rem}
   .hero h1{font-size:clamp(1.4rem,4.5vw,2.2rem);line-height:1}
   .hero p.lead{font-size:0.85rem;line-height:1.4}

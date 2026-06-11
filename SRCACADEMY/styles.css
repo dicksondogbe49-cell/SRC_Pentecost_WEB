@@ -276,12 +276,12 @@ footer{background:var(--card);border-top:1px solid var(--border);margin-top:3.5r
   
   /* Footer */
   .footer-inner{grid-template-columns:1fr;gap:2rem;padding:3rem 0}
-  .footer h4{font-size:1.1rem;margin-bottom:1rem;letter-spacing:.1em;margin-left:100px;}
-  .footer li{font-size:0.95rem;margin-bottom:0.65rem;margin-left:100px;}
-  .footer li a{transition:color .2s;margin-left:100px;}
+  .footer h4{font-size:1.1rem;margin-bottom:1rem;letter-spacing:.1em;margin-left:20px;}
+  .footer li{font-size:0.95rem;margin-bottom:0.65rem;margin-left:20px;}
+  .footer li a{transition:color .2s;margin-left:20px;}
   .footer-copy{font-size:0.9rem;line-height:1.6}
-  .socials{gap:0.75rem;margin-top:1.25rem;margin-left:100px;}
-  .socials a{width:40px;height:40px;font-size:1rem}
+  .socials{gap:0.75rem;margin-top:1.25rem;margin-left:20px;}
+  .socials a{width:40px;height:40px;font-size:1rem;margin-left:20px;}
   .copyright{font-size:0.9rem;padding:1.25rem 0;border-top:1px solid var(--border)}
   
   /* Forms */

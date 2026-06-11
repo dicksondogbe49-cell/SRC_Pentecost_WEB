@@ -111,7 +111,7 @@ section.block{padding:4rem 0}
 .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;padding:3rem 0;border-bottom:1px solid var(--border)}
 .stat .num{font-family:'Bebas Neue',sans-serif;font-size:4.5rem;color:var(--primary);line-height:1}
 .stat .lbl{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.2em;color:var(--fg-dim);margin-top:.25rem;font-size:.9rem}
-@media(min-width:768px){.stats{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:768px){.stats{grid-template-columns:repeat(4,1fr);margin:25px;}}
 
 /* SPORTS GRID */
 .sports-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}

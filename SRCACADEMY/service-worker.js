@@ -13,6 +13,11 @@ const urlsToCache = [
   './script.js'
 ];
 
+// YouTube URLs to cache (for offline playlist access)
+const youtubeUrls = [
+  'https://www.youtube.com/embed/mai8kYTxXQQ?si=MRaNO6409e7g4KcK&autoplay=1&mute=1'
+];
+
 // Install event - cache files
 self.addEventListener('install', event => {
   event.waitUntil(

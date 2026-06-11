@@ -70,9 +70,11 @@ header.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(18,18,
 
 /* HERO */
 .hero{position:relative;height:92vh;min-height:620px;overflow:hidden;margin-top:-72px}
-.hero img.bg,.hero video.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero .overlay{position:absolute;inset:0;background:var(--grad-hero)}
-.hero .overlay2{position:absolute;inset:0;background:rgba(18,18,18,.4)}
+.hero img.bg,.hero video.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero iframe.bg{position:absolute;inset:0;width:100%;height:100%;border:none;z-index:0;background:#000}
+.hero iframe.bg[src]{display:block}
+.hero .overlay{position:absolute;inset:0;background:var(--grad-hero);z-index:1}
+.hero .overlay2{position:absolute;inset:0;background:rgba(18,18,18,.4);z-index:1}
 .hero-content{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 0 6rem;z-index:2}
 .eyebrow{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.35em;color:var(--secondary);font-size:1.15rem;margin-bottom:1.25rem}
 .hero h1{font-size:clamp(4.5rem,12vw,11rem);line-height:.85}
@@ -192,6 +194,144 @@ footer{background:var(--card);border-top:1px solid var(--border);margin-top:5rem
   .nav-links,.nav-right .search-box,.nav-right .btn{display:none}
   .hamburger{display:block}
 }
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+  .container{padding:0 1rem}
+  
+  /* Hero */
+  .hero{height:70vh;min-height:500px}
+  .hero-content{padding:4rem 0 3rem}
+  .hero h1{font-size:clamp(2.5rem,8vw,4.5rem)}
+  .hero p.lead{font-size:1rem;max-width:100%}
+  .hero-actions{flex-direction:column;gap:0.75rem}
+  .hero-actions .btn{width:100%}
+  .marquee-track{font-size:1rem;gap:1.5rem}
+  
+  /* Nav */
+  .nav-inner{height:60px}
+  .logo{font-size:1.2rem}
+  .logo-mark{width:32px;height:32px;font-size:1rem}
+  
+  /* Buttons */
+  .btn{padding:0.85rem 1.5rem;font-size:1rem}
+  .btn-lg{padding:1rem 1.8rem;font-size:1.1rem}
+  
+  /* Section head */
+  .section-head{flex-direction:column;align-items:flex-start;gap:1rem}
+  .section-head .more{display:none}
+  
+  /* Stats */
+  .stats{grid-template-columns:repeat(2,1fr);gap:1.5rem;padding:2rem 0}
+  .stat .num{font-size:3rem}
+  .stat .lbl{font-size:0.8rem}
+  
+  /* Media section */
+  .media{padding:3rem 0}
+  .media-grid{gap:2rem}
+  .media h2{font-size:clamp(2rem,5vw,2.5rem);margin-bottom:1rem}
+  .media-grid {gap: 2rem;}
+  
+  /* CTA */
+  .cta{padding:3rem 0}
+  .cta h2{font-size:clamp(2rem,6vw,3rem)}
+  .cta .cta-copy{font-size:1rem}
+  
+  /* Page header */
+  .page-header{padding:3rem 0}
+  .page-header h1{font-size:clamp(2rem,6vw,3.5rem)}
+  .page-header .sub{font-size:1rem;margin-top:1rem}
+  
+  /* Block sections */
+  section.block{padding:3rem 0}
+  
+  /* Footer */
+  .footer-inner{grid-template-columns:1fr;gap:1.5rem;padding:2rem 0}
+  .footer h4{font-size:1rem;margin-bottom:0.75rem}
+  .footer li{font-size:0.9rem;margin-bottom:0.5rem}
+  .footer-copy{font-size:0.85rem}
+  .copyright{font-size:0.85rem;padding:1rem 0}
+  
+  /* Forms */
+  .form{padding:1.5rem}
+  .form-row{margin-bottom:1rem}
+  .form input,.form select,.form textarea{padding:0.75rem 0.9rem;font-size:0.95rem}
+  
+  /* Cards */
+  .card-grid{gap:1rem}
+  .card{border-radius:4px}
+  .card-body{padding:1rem}
+  .card h3{font-size:1.3rem}
+  .card p{font-size:0.9rem}
+}
+
+@media(max-width:480px){
+  .container{padding:0 0.75rem}
+  
+  /* Hero */
+  .hero{height:60vh;min-height:400px}
+  .hero-content{padding:2.5rem 0 2rem}
+  .hero h1{font-size:clamp(1.8rem,6vw,2.5rem)}
+  .hero p.lead{font-size:0.9rem}
+  .hero .eyebrow{font-size:0.9rem;margin-bottom:0.75rem}
+  .marquee-track{font-size:0.8rem;gap:1rem}
+  
+  /* Nav */
+  .nav-inner{height:56px}
+  .logo{font-size:1rem;gap:0.4rem}
+  .logo-mark{width:28px;height:28px;font-size:0.9rem}
+  
+  /* Buttons */
+  .btn{padding:0.75rem 1.25rem;font-size:0.95rem;letter-spacing:.1em}
+  .btn-lg{padding:0.9rem 1.5rem;font-size:1rem}
+  
+  /* Stats */
+  .stats{grid-template-columns:1fr;gap:1rem;padding:1.5rem 0}
+  .stat .num{font-size:2rem}
+  .stat .lbl{font-size:0.7rem}
+  
+  /* Media */
+  .media{padding:2rem 0}
+  .media h2{font-size:clamp(1.5rem,5vw,2rem)}
+  .media-grid{gap:1.5rem}
+  
+  /* CTA */
+  .cta{padding:2rem 0}
+  .cta h2{font-size:clamp(1.5rem,5vw,2rem)}
+  .cta .cta-copy{font-size:0.95rem}
+  
+  /* Page header */
+  .page-header{padding:2rem 0;border-bottom:none}
+  .page-header h1{font-size:clamp(1.5rem,5vw,2rem)}
+  .page-header .sub{font-size:0.9rem;margin-top:0.75rem}
+  
+  /* Block */
+  section.block{padding:2rem 0}
+  
+  /* Footer */
+  .footer-inner{gap:1rem;padding:1.5rem 0}
+  .footer h4{font-size:0.9rem;margin-bottom:0.5rem}
+  .footer li{font-size:0.85rem;margin-bottom:0.35rem}
+  .footer-copy{font-size:0.8rem}
+  .socials a{width:32px;height:32px;font-size:0.9rem}
+  .copyright{font-size:0.8rem;padding:0.75rem 0}
+  
+  /* Forms */
+  .form{padding:1.25rem}
+  .form label{font-size:0.8rem;margin-bottom:0.35rem}
+  .form input,.form select,.form textarea{padding:0.65rem 0.8rem;font-size:0.9rem}
+  
+  /* Cards */
+  .card h3{font-size:1.1rem}
+  .card p{font-size:0.85rem}
+  
+  /* Newsletter */
+  .newsletter{gap:0.35rem}
+  .newsletter input{padding:0.5rem 0.6rem;font-size:0.85rem}
+  .newsletter button{padding:0.5rem 0.7rem}
+  .visitor-info{font-size:0.7rem;margin-top:0.75rem}
+}
+
 .fade-up{opacity:0;transform:translateY(30px);animation:fadeUp .8s cubic-bezier(.65,0,.35,1) forwards}
 .fade-up.d1{animation-delay:.1s}.fade-up.d2{animation-delay:.2s}.fade-up.d3{animation-delay:.3s}
 @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
